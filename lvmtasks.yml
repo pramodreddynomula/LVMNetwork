@@ -11,3 +11,7 @@
    - name: create Volume_Group
      include_role:
         name: creating_VolumeGroup
+
+   - name: create Logical_group
+     include_role:
+        name: Create_LogicalVolume

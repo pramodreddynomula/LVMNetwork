@@ -4,3 +4,10 @@
     vg: lv1
     pvs: /dev/sdb1
     pesize: 16
+
+- name: create Volume Group2
+  lvg:
+    vg: Vg1
+    pvs: /dev/sdb2
+
+    
