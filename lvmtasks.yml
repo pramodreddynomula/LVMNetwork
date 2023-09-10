@@ -1,0 +1,13 @@
+---
+- hosts: 192.168.0.102
+  become: yes
+  gather_facts: true
+
+  tasks:
+   - name: create_partition
+     include_role:
+        name: Create_partition
+
+   - name: create Volume_Group
+     include_role:
+        name: creating_VolumeGroup

@@ -1,0 +1,6 @@
+---
+- name: Create Volume Group
+  lvg:
+    vg: lv1
+    pvs: /dev/sdb1
+    pesize: 16
