@@ -15,3 +15,20 @@
    - name: create Logical_group
      include_role:
         name: Create_LogicalVolume
+
+   - name: create directory
+     include_role: 
+         name: create_directory
+    
+   - name: mount directory
+     include_role:
+         name: mount_directory
+
+   - name: extend logical volume
+     include_role:
+         name: extend_logicalvolume
+
+   - name: remove logical volume
+     include_role:
+         name: remove_lvolume
+         

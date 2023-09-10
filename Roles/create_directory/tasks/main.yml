@@ -1,0 +1,21 @@
+---
+- name: create a dir if doesnt exist]
+  file:
+    path: /dir1
+    state: directory
+    mode: '0755'
+- name: create dir
+  file:
+    path: /dir2
+    state: directory
+    mode: '0755'
+- name: format the xfs filesystem
+  filesystem:
+     fstype: xfs
+     dev: /dev/Vg1/lv1 
+- name: format xfs filesystem     
+  filesystem:
+      fstype: xfs
+      dev: /dev/lv1/lvolume1
+     
+

@@ -1,0 +1,7 @@
+---
+- name: remove logical volumer
+  lvol:
+    vg: Vg1
+    lv: lv2
+    state: absent
+    force: yes

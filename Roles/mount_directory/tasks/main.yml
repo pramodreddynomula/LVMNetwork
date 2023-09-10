@@ -1,0 +1,16 @@
+---
+
+- name: mount lv on dir1
+  mount:
+    path: /dir1
+    src: /dev/Vg1/lv1
+    fstype: xfs
+    state: mounted
+
+- name: mount lv on dir1
+  mount:
+    path: /dir2
+    src: /dev/lv1/lvolume1
+    fstype: xfs
+    state: mounted
+  
