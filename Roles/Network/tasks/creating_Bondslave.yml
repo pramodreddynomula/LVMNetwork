@@ -9,3 +9,4 @@
   with_items:
      - enp0s8
      - enp0s9  
+     - enp0s10
