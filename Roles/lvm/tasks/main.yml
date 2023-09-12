@@ -1,0 +1,22 @@
+---
+- name: create_partition
+  include_tasks: Create_partition.yml
+
+- name: create Volume_Group
+  include_tasks: creating_VolumeGroup.yml
+    
+- name: create Logical_group
+  include_tasks: create_LogicalVolume.yml
+    
+- name: create directory
+  include_tasks: create_directory.yml
+      
+- name: mount directory
+  include_tasks: mount_directory.yml
+      
+# - name: extend logical volume
+#   include_tasks: extend_logicalvolume.yml
+
+- name: remove logical volume
+  include_tasks: remove_lvolume.yml
+      

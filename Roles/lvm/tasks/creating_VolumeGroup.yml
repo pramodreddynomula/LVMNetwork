@@ -1,13 +1,13 @@
 ---
 - name: Create Volume Group
   lvg:
-    vg: lv1
+    vg: "{{ vg_name1 }}"   #lv1
     pvs: /dev/sdb1
     pesize: 16
 
 - name: create Volume Group2
   lvg:
-    vg: Vg1
+    vg: "{{ vg_name2 }}"    #Vg1
     pvs: /dev/sdb2
 
     

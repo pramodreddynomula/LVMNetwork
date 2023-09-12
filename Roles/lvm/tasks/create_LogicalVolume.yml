@@ -1,0 +1,24 @@
+---
+
+- name: creating Logical volume
+  lvol:
+    vg: "{{ vg_name2 }}"  #Vg1 
+    lv: "{{ lv_name1 }}"    #lv1
+    size: "{{ lv_size3 }}"  #1.5g
+    force: yes
+
+- name: create lv2
+  lvol:
+    vg: "{{ vg_name2 }}" #Vg1
+    lv: "{{ lv_name2 }}"  #lv2
+    size: "{{ lv_size1 }}" #1g
+    force: yes
+- name: creating Logical volume
+  lvol:
+    vg: "{{ vg_name1 }}"  #lv1
+    lv: "{{ lv_name3 }}"   #lvolume1
+    size: "{{ lv_size2 }}"   #2G
+    force: yes  
+
+
+  

@@ -1,0 +1,7 @@
+---
+- name: remove logical volumer
+  lvol:
+    vg: "{{ vg_name2 }}"  #Vg1
+    lv: "{{ lv_name2 }}"  #lv2
+    state: absent
+    force: yes

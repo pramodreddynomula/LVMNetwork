@@ -1,0 +1,17 @@
+---
+
+- name: mount lv on dir1
+  mount:
+    path: "{{ dir_path1 }}"  #/dir1
+    # src: /dev/Vg1/lv1
+    src: "/dev/{{ vg_name2 }}/{{ lv_name1 }}"
+    fstype: xfs
+    state: mounted
+
+- name: mount lv on dir1
+  mount:
+    path: "{{ dir_path2 }}"  #/dir2
+    src: "/dev/{{ vg_name1 }}/{{ lv_name3 }}"
+    fstype: xfs
+    state: mounted
+  

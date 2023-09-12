@@ -1,0 +1,21 @@
+---
+- name: create a dir if doesnt exist]
+  file:
+    path: "{{ dir_path1 }}"    #/dir1
+    state: directory
+    mode: '0755'
+- name: create dir
+  file:
+    path: "{{ dir_path2 }}"   #/dir2
+    state: directory
+    mode: '0755'
+- name: format the xfs filesystem
+  filesystem:
+     fstype: xfs
+     dev: "/dev/{{ vg_name2 }}/{{ lv_name1 }}" 
+- name: format xfs filesystem     
+  filesystem:
+      fstype: xfs
+      dev: "/dev/{{ vg_name1 }}/{{ lv_name3 }}"
+     
+

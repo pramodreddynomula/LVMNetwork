@@ -1,0 +1,6 @@
+---
+- name: creating masterbond
+  include_tasks: creating_Masterbond.yml
+
+- name: creating bond-slave
+  include_tasks: creating_Bondslave.yml
