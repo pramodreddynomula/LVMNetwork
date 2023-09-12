@@ -1,0 +1,11 @@
+---
+- name: creating bond slaves
+  nmcli:
+    type: bond-slave
+    conn_name: "{{ item }}"
+    ifname: "{{ item }}"
+    master: mybond0
+    state: present
+  with_items:
+     - enp0s8
+     - enp0s9  

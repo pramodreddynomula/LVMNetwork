@@ -4,13 +4,13 @@
   gather_facts: true
 
   tasks:
-   - name: lvm
-     include_role: 
-         name: lvm
+  #  - name: lvm
+  #    include_role: 
+  #        name: lvm
 
-  #  - name: create Volume_Group
-  #    include_role:
-  #       name: lvm
+   - name: create masterbond
+     include_role:
+        name: Network
 
   #  - name: create Logical_group
   #    include_role:

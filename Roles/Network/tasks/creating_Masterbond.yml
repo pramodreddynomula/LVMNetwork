@@ -1,0 +1,9 @@
+---
+- name: create Masterbond
+  nmcli:
+    type: bond
+    conn_name: "mybond0"
+    ip4: "192.168.0.121"
+    gw4: "192.168.0.1"
+    mode: "balance-rr"
+    state: present
