@@ -1,8 +1,0 @@
----
-
-- name: extend logical volume
-  lvol:
-    vg: Vg1
-    lv: lv1
-    size: 2g
-    resizefs: true

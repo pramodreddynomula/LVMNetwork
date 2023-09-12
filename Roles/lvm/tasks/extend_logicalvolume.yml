@@ -1,0 +1,8 @@
+---
+
+- name: extend logical volume
+  lvol:
+    vg: "{{ vg_name2 }}" #Vg1
+    lv: "{{ lv_name1 }}"   #lv1
+    size: "{{ lvext_size }}" #2g
+    resizefs: true

@@ -4,31 +4,30 @@
   gather_facts: true
 
   tasks:
-   - name: create_partition
-     include_role:
-        name: Create_partition
-
-   - name: create Volume_Group
-     include_role:
-        name: creating_VolumeGroup
-
-   - name: create Logical_group
-     include_role:
-        name: Create_LogicalVolume
-
-   - name: create directory
+   - name: lvm
      include_role: 
-         name: create_directory
+         name: lvm
+
+  #  - name: create Volume_Group
+  #    include_role:
+  #       name: lvm
+
+  #  - name: create Logical_group
+  #    include_role:
+  #       name: lvm
+
+  #  - name: create directory
+  #    include_role: 
+  #        name: lvm
     
-   - name: mount directory
-     include_role:
-         name: mount_directory
+  #  - name: mount directory
+  #    include_role:
+  #        name: lvm
 
-   - name: extend logical volume
-     include_role:
-         name: extend_logicalvolume
+  #  - name: extend logical volume
+  #    include_role:
+  #        name: lvm
 
-   - name: remove logical volume
-     include_role:
-         name: remove_lvolume
-         
+  #  - name: remove logical volume
+  #    include_role:
+  #        name: lvm

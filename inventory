@@ -1,1 +1,2 @@
 192.168.0.102 ansible_connection=ssh ansible_ssh_user=pramodrn
+192.168.0.149 ansible_connection=ssh ansible_ssh_user=ansible
