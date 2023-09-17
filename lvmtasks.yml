@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.0.102
+- hosts: webserver
   become: yes
   gather_facts: true
 
